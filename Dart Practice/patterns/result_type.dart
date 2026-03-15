@@ -1,8 +1,8 @@
 // Result<T, E> — wraps success or failure without throwing exceptions
 // Used in repository layer to return typed errors instead of raw exceptions
 
-sealed class Resullt<T, E> {
-  const Resullt();
+sealed class Result<T, E> {
+  const Result();
 }
 final class Success<T, E> extends Result<T, E>{
   final T data;
